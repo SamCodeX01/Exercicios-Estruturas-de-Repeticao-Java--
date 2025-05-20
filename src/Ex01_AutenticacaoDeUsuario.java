@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AutenticacaoDeUsuario_01 {
+public class Ex01_AutenticacaoDeUsuario {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -36,6 +36,7 @@ Crie um sistema que permita cadastrar N clientes, solicitando nome e telefone, u
 
 3. Contador de login
 Importe vários usuários e conte quantos tentaram login, usando while para registrar tentativas até atingir um limite (ex: 3 tentativas).
+
 4. Loja: Carrinho de compras
 Implemente um menu que permite o usuário inserir o preço de vários produtos até decidir parar (ex: digitar 0 para sair). No final, exiba o total.
 5. Desconto progressivo
