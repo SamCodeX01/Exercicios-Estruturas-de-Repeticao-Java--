@@ -21,7 +21,7 @@ public class Ex01_AutenticacaoDeUsuario {
            while (!login.equals("Sam") || !senha.equals("1234"));
            System.out.println("Logando na conta!");
            System.exit(0);
-    }
+   }
 
 }
 
@@ -39,6 +39,7 @@ Importe vários usuários e conte quantos tentaram login, usando while para regi
 
 4. Loja: Carrinho de compras
 Implemente um menu que permite o usuário inserir o preço de vários produtos até decidir parar (ex: digitar 0 para sair). No final, exiba o total.
+
 5. Desconto progressivo
 Para uma loja, aplique descontos progressivos: a cada 10 produtos comprados, dê 10% de desconto no total. Use for para simular clientes comprando diferentes quantidades.
 6. Cadastro de produtos

@@ -9,18 +9,17 @@ public class Ex02_CadastroDeClientes {
 
         Scanner sc = new Scanner(System.in);
 
-        String cliente, telefone,simOuNao;
+        String cliente, telefone;
+        int qtd;
 
-        do{
-            System.out.print("Cliente: ");
-            cliente = sc.next();
+        System.out.print("Quantos clientes deseja cadastrar? ");
+        qtd = sc.nextInt();
 
-            System.out.print("Telefone: ");
-            telefone = sc.next();
-
-            System.out.println("Digite S para continuar ou N para Sair ");
-            simOuNao = sc.next();
-        }
-        while(simOuNao.equalsIgnoreCase("S"));
+            for(int i = 0; i < qtd ; i++){
+                System.out.print("Cliente: ");
+                cliente = sc.next();
+                System.out.print("Telefone: ");
+                telefone = sc.next();
+            }
     }
 }

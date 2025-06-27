@@ -8,7 +8,7 @@ public class Ex03_ContadorDeLogin {
 //        String login, senha;
         int tentativas = 3;
 
-
+/*
         while(tentativas <3){
             System.out.println("Login: ");
             String login = sc.next();
@@ -17,6 +17,6 @@ public class Ex03_ContadorDeLogin {
             if(login.equalsIgnoreCase("sam" && senha.equals("123"))){}
             System.out.println();
         }
-
+*/
     }
 }
