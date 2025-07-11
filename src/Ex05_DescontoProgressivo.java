@@ -11,20 +11,49 @@ public class Ex05_DescontoProgressivo {
         Scanner sc = new Scanner(System.in);
         double preco, total = 0;
 
-        for (int i = 1; i < 20; i++) {
+        for (int i = 1; i < 40; i++) {
             System.out.println("Produto: " + i);
+
             System.out.print("Digite o preço: ");
             preco = sc.nextDouble();
 
-            if(i >= 10){
-                System.out.println("aplicar desconto");
-                //condição de saida é só usar o break
+           // total = total + preco;
+
+            if(preco == 0){
+                System.out.println("DESCONTO");
+            }else{
+                break;
             }
 
-            total = total + preco;
+
+//            if(i >= 10 && i <21){
+//                System.out.println("desconto 10%");
+//                 if(i == 0){
+//                break;
+//                }
+//            }
+
+            }
+
+//
+//            if(i >= 10 && i <21){
+//                System.out.println("aplicar desconto de 10%");
+//                //condição de saida é só usar o break
+//            }
+//            if(i >= 20 && i < 31){
+//                System.out.println("aplicar desconto de 20%");
+//                //condição de saida é só usar o break
+//            }
+//            if(i >= 30 && i < 41){
+//                System.out.println("aplicar desconto de 30%");
+//                //condição de saida é só usar o break
+//            }
+
+            System.out.println();
+
         }
         //System.out.print("Total: " + total);
-    }
+
 }
 
 
