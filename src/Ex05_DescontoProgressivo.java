@@ -12,7 +12,7 @@ public class Ex05_DescontoProgressivo {
         double total = 0;
         double preco;
 
-        for (int i = 1; i < 4; i++) {
+        for (int i = 1; i < 12; i++) {
             System.out.println("Produto: " + i);
             System.out.print("Digite o preço ou `s` para sair: ");
             //preco = sc.nextDouble();
@@ -31,15 +31,18 @@ public class Ex05_DescontoProgressivo {
                 sc.next(); // Limpa o buffer
                 i--; // Repete a iteração
             }
+
+            if(i >= 10 && i <=20){
+                 System.out.println("desconto 10%");
+            }
+            else if(i >= 21 && i <=30){
+                 System.out.println("desconto 20%");
+            }
+            else if(i >= 31 && i <=40){
+                 System.out.println("desconto 30%");
+            }
         }
         System.out.println("Valor total: " + total);
-
-                    if(i >= 10 && i <21){
-                        System.out.println("desconto 10%");
-                        if(i == 0){
-                            break;
-                        }
-                    }
     }
 }
 
