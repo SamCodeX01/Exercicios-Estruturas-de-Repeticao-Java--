@@ -10,7 +10,7 @@ public class Ex05_DescontoProgressivo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double total = 0;
-        double preco;
+        double preco = 0;
 
         for (int i = 1; i < 41; i++) {
             System.out.println("Produto: " + i);
@@ -24,7 +24,7 @@ public class Ex05_DescontoProgressivo {
             }
             else if(sc.hasNextDouble()){// Se não for "s", tenta ler como double
                 preco = sc.nextDouble();
-                //total += preco;
+                total += preco;
             }
             else{
                 System.out.println("Digite `s` ou um valor válido!");
@@ -33,9 +33,9 @@ public class Ex05_DescontoProgressivo {
             }
 
             if(i >= 10 && i <=19){
-                System.out.println("desconto 10%");
+                System.out.println("Desconto 10%");
                 System.out.println("Total sem desconto: " + total);
-                total += preco;
+                Double desconto = total*10;
 
             }
             else if(i >= 20 && i <=29){
