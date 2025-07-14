@@ -17,14 +17,14 @@ public class Ex05_DescontoProgressivo {
             System.out.print("Digite o preço ou `s` para sair: ");
             //preco = sc.nextDouble();
 
-            if (sc.hasNext("s")){//Verifica se a entrada é "s" antes de ler como double
-                sc.next(); //Consome o "s" do buffer
+            if (sc.hasNext("s")){// Olha o que tem no buffer (o que foi digitado), mas não remove. Verifica se a entrada é "s" antes de ler como double
+                sc.next(); // Consome (remove) esse valor do buffer, limpando para a próxima leitura.
                 System.out.println("saindo...");
                 break;
             }
             else if(sc.hasNextDouble()){// Se não for "s", tenta ler como double
                 preco = sc.nextDouble();
-                total += preco;
+                //total += preco;
             }
             else{
                 System.out.println("Digite `s` ou um valor válido!");
@@ -32,11 +32,13 @@ public class Ex05_DescontoProgressivo {
                 i--; // Repete a iteração
             }
 
-            if(i >= 10 && i <=20){
+            if(i >= 10 && i <=19){
                 System.out.println("desconto 10%");
                 System.out.println("Total sem desconto: " + total);
+                total += preco;
+
             }
-            else if(i > 20 && i <=30){
+            else if(i >= 20 && i <=29){
                  System.out.println("desconto 20%");
             }
             else if(i >= 30 && i <=40){
