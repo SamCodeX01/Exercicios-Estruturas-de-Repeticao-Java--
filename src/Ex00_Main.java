@@ -62,17 +62,17 @@ public class Ex00_Main {
                 break;
             case 7:
                 System.out.println("Você escolheu o exercício 7: ");
-                System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                System.out.println("===Consulta de Estoque===\n");
                 Ex06_CadastroDeProdutos.main(args);
                 break;
             case 8:
                 System.out.println("Você escolheu o exercício 8: ");
-                System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                System.out.println("===Empréstimo Bancário===\n");
                 Ex06_CadastroDeProdutos.main(args);
                 break;
             case 9:
                 System.out.println("Você escolheu o exercício 9: ");
-                System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                System.out.println("===Verificação de Pedidos===\n");
                 Ex06_CadastroDeProdutos.main(args);
                 break;
             case 10:
