@@ -25,7 +25,7 @@ public class Ex07_ConsultaDeEstoque {
         }
 
         if(qtd>3){
-            System.out.println(qtd);
+            System.out.println(qtd);;
         }
     }
 }
