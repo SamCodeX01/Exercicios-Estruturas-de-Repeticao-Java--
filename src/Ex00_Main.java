@@ -43,6 +43,7 @@ public class Ex00_Main {
             case 3:
                 System.out.println("Você escolheu o exercício 3: ");
                 System.out.println("===Contador de login===\n");
+                Ex03_ContadorDeLogin.main(args);
                 break;
             case 4:
                 System.out.println("Você escolheu o exercício 4: ");
@@ -52,46 +53,57 @@ public class Ex00_Main {
             case 5:
                 System.out.println("Você escolheu o exercício 5: ");
                 System.out.println("===Desconto progressivo===\n");
+                Ex05_DescontoProgressivo.main(args);
                 break;
             case 6:
                 System.out.println("Você escolheu o exercício 6: ");
-                System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                System.out.println("===Cadastro de produtos===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 7:
                 System.out.println("Você escolheu o exercício 7: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 8:
                 System.out.println("Você escolheu o exercício 8: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 9:
                 System.out.println("Você escolheu o exercício 9: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 10:
                 System.out.println("Você escolheu o exercício 10: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 11:
                 System.out.println("Você escolheu o exercício 11: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 12:
                 System.out.println("Você escolheu o exercício 12: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 13:
                 System.out.println("Você escolheu o exercício 13: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 14:
                 System.out.println("Você escolheu o exercício 14: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 15:
                 System.out.println("Você escolheu o exercício 15: ");
                 System.out.println("===xxxxxxxxxxxxxxxxxx===\n");
+                Ex06_CadastroDeProdutos.main(args);
                 break;
             case 16:
                 System.out.println("Você escolheu o exercício 16: ");

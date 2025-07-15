@@ -10,7 +10,7 @@ public class Ex05_DescontoProgressivo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double total = 0;
-        double preco = 0;
+        double preco;
 
         for (int i = 1; i < 41; i++) {
             System.out.println("---------------");
@@ -18,8 +18,8 @@ public class Ex05_DescontoProgressivo {
             System.out.print("Digite o preço ou `s` para sair: ");
             //preco = sc.nextDouble();
 
-            if (sc.hasNext("s")){// Olha o que tem no buffer (o que foi digitado), mas não remove. Verifica se a entrada é "s" antes de ler como double
-                sc.next(); // Consome (remove) esse valor do buffer, limpando para a próxima leitura.
+            if (sc.hasNext("s")){// Olha o que tem no 'buffer' (o que foi digitado), mas não remove. Verifica se a entrada é "s" antes de ler como double
+                sc.next(); // Consome (remove) esse valor do 'buffer', limpando para a próxima leitura.
                 System.out.println("saindo...");
                 break;
             }
@@ -36,19 +36,19 @@ public class Ex05_DescontoProgressivo {
             if(i >= 10 && i <=19){
                 System.out.println("Desconto 10%");
                 System.out.println("Total sem desconto: " + total);
-                Double desconto = total - (total*0.10);
+                double desconto = total - (total*0.10);
                 System.out.println("Total com desconto: " + desconto);
             }
             else if(i >= 20 && i <=29){
                 System.out.println("Desconto 20%");
                 System.out.println("Total sem desconto: " + total);
-                Double desconto = total - (total*0.20);
+                double desconto = total - (total*0.20);
                 System.out.println("Total com desconto: " + desconto);
             }
             else if(i >= 30 && i <=39){
                 System.out.println("Desconto 30%");
                 System.out.println("Total sem desconto: " + total);
-                Double desconto = total - (total*0.30);
+                double desconto = total - (total*0.30);
                 System.out.println("Total com desconto: " + desconto);
                 System.out.println("**********//**********");
             }
