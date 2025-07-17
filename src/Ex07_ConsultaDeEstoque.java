@@ -14,18 +14,42 @@ public class Ex07_ConsultaDeEstoque {
             System.out.print("Digite a quantidade do produto: ");
             int qtd = sc.nextInt();
 
-
-            // mostre todos os produtos com quantidade maior que zero, usando while.
+// mostre todos os produtos com quantidade maior que zero, usando while.
 
             if (prodNome.equalsIgnoreCase("S")) {
                 System.out.println("Você digitou 'S' para sair!");
                 break;
             }
-
         }
+
+        /*
+        * produtos é um array de objetos Produto
+          Cada Produto tem um método getQuantidade()
+          O loop percorre todos os produtos e imprime apenas os com quantidade > 0
+        * */
 
         if(qtd>3){
             System.out.println(qtd);;
         }
     }
 }
+
+
+/*
+Aqui está um exemplo simples em Java usando `while` para mostrar produtos com quantidade maior que zero:
+
+```java
+int i = 0;
+while (i < produtos.length) {
+    if (produtos[i].getQuantidade() > 0) {
+        System.out.println(produtos[i]);
+    }
+    i++;
+}
+```
+
+Onde:
+- `produtos` é um array de objetos Produto
+- Cada Produto tem um método `getQuantidade()`
+- O loop percorre todos os produtos e imprime apenas os com quantidade > 0
+*/
