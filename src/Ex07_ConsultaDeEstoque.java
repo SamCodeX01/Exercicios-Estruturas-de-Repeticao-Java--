@@ -9,7 +9,7 @@ public class Ex07_ConsultaDeEstoque {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Digite o nome produto ou 'S' para sair: ");
+            System.out.print("Digite o nome do produto ou 'S' para sair: ");
             String prodNome = sc.next();
             System.out.print("Digite a quantidade do produto: ");
             int qtd = sc.nextInt();
@@ -28,9 +28,6 @@ public class Ex07_ConsultaDeEstoque {
           O loop percorre todos os produtos e imprime apenas os com quantidade > 0
         * */
 
-        if(qtd>3){
-            System.out.println(qtd);;
-        }
     }
 }
 
