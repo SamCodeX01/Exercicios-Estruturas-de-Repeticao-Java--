@@ -1,80 +1,34 @@
 import java.sql.Array;
 import java.util.Scanner;
+/*7. Consulta de estoque
+Após cadastrar produtos, mostre todos os produtos
+com quantidade maior que zero, usando while.
+*/
 
 public class Ex000_PopulandoUmArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numero, i;
 
-        System.out.print("Digite um numero: ");
-        numero = sc.nextInt();
+        System.out.print("Quantos números você quer guardar? ");
+        int tamanho = sc.nextInt();
 
-        int [] tamanho = new int[numero];
+        int[] numeros = new int[tamanho]; //Cria o array com tamanho escolhido
 
-        for(i = 0; i < tamanho.length; i++){
-            System.out.println(i);
-        }
+        int i = 0; //Variável para controlar a posição no array
 
-    }
-}
-/*
-Scanner sc = new Scanner(System.in);
-
-System.out.print("Quantos números deseja digitar? ");
-int tamanho = sc.nextInt();
-
-int[] numeros = new int[tamanho]; // Cria um array com o tamanho desejado
-
-for (int i = 0; i < numeros.length; i++) {
-    System.out.print("Digite um número: ");
-    numeros[i] = sc.nextInt(); // Armazena no índice i
-}
-
-sc.close();
-------------------------------------------------------------------------------------------------------------------
-* import java.util.Scanner;
-
-public class ProdutosComScanner {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Arrays para armazenar os produtos (vamos limitar a 100 por simplicidade)
-        String[] nomes = new String[100];
-        int[] quantidades = new int[100];
-        int totalProdutos = 0;
-
-        System.out.println("Cadastro de Produtos (digite 'sair' para encerrar)");
-
-        // Cadastro dos produtos
-        while (true) {
-            System.out.print("Nome do produto: ");
-            String nome = scanner.nextLine();
-
-            if (nome.equalsIgnoreCase("sair")) {
-                break;
-            }
-
-            System.out.print("Quantidade: ");
-            int quantidade = scanner.nextInt();
-            scanner.nextLine(); // Limpar o buffer
-
-            nomes[totalProdutos] = nome;
-            quantidades[totalProdutos] = quantidade;
-            totalProdutos++;
-        }
-
-        // Mostrar produtos com quantidade > 0
-        System.out.println("\nProdutos com quantidade maior que zero:");
-        int i = 0;
-        while (i < totalProdutos) {
-            if (quantidades[i] > 0) {
-                System.out.println(nomes[i] + " - Quantidade: " + quantidades[i]);
-            }
+        while (i < tamanho) { //Enquanto 0 for menor que o tamanho digitado, faça o loop
+            System.out.print("Digite o " + (i + 1) + "° número: "); //(i + 1) faz a contagem começar em 1 em vez de 0.
+            numeros[i] = sc.nextInt();
             i++;
+            //Se não tiver o i++, o while ficara preso no mesmo valor de i para sempre!
+            //O programa sempre pediria o 1º número (i = 0 eternamente).
+            //Loop infinito! ⚠️
         }
 
-        scanner.close();
+        System.out.println("\nNúmeros digitados: ");
+        for (int num : numeros) {//Para cada número "num" dentro do array numeros, faça:
+            System.out.println(num); //Mostra os números guardados no Array
+        }
+
     }
 }
-
-*/
