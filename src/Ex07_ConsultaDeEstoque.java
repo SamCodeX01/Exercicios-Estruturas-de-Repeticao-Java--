@@ -11,42 +11,47 @@ public class Ex07_ConsultaDeEstoque {
         while (true) {
             System.out.print("Digite o nome do produto ou 'S' para sair: ");
             String prodNome = sc.next();
+
+            if (prodNome.equalsIgnoreCase("S")) {
+                    System.out.println("Você digitou 'S' para sair!");
+                    break;
+                }
+
             System.out.print("Digite a quantidade do produto: ");
             int qtd = sc.nextInt();
 
-// mostre todos os produtos com quantidade maior que zero, usando while.
-
-            if (prodNome.equalsIgnoreCase("S")) {
-                System.out.println("Você digitou 'S' para sair!");
-                break;
-            }
         }
 
-        /*
-        * produtos é um array de objetos Produto
-          Cada Produto tem um método getQuantidade()
-          O loop percorre todos os produtos e imprime apenas os com quantidade > 0
-        * */
-
     }
 }
 
+/* Scanner scanner = new Scanner(System.in);
+	    String produtos = "";
+	    String valores = "";
 
-/*
-Aqui está um exemplo simples em Java usando `while` para mostrar produtos com quantidade maior que zero:
+	    while (true) {
+	        System.out.print("\nInforme o nome do produto ou 'S' para sair: ");
+	        String nomeProduto = scanner.next();
 
-```java
-int i = 0;
-while (i < produtos.length) {
-    if (produtos[i].getQuantidade() > 0) {
-        System.out.println(produtos[i]);
-    }
-    i++;
-}
-```
+	        if (nomeProduto.equalsIgnoreCase("S")) {
+                System.out.println("Você digitou 'S' para sair! \n");
+                break;
+            }
 
-Onde:
-- `produtos` é um array de objetos Produto
-- Cada Produto tem um método `getQuantidade()`
-- O loop percorre todos os produtos e imprime apenas os com quantidade > 0
-*/
+            System.out.print("Digite a quantidade do produto: ");
+            String valorProduto = scanner.next();
+
+            produtos = produtos + "," + nomeProduto;
+            valores = valores + "," + valorProduto;
+	    }
+
+	    String[] listaProdutos = produtos.split(",");
+	    String[] listaValores = valores.split(",");
+
+	    System.out.print("LISTA DE PRODUTOS \n");
+	    for (int i=1; i<listaProdutos.length; i++) {
+	        if (Float.parseFloat(listaValores[i].trim()) > 0.0f)
+	            System.out.println(listaProdutos[i] + "          " + listaValores[i]);
+	    }
+	}
+	*/
